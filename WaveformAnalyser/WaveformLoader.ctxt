@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=WaveformLoader
+comment0.text=Waveform\ loads\ and\ saves\ wav\ files\ into\ arraylists\ of\ double
+comment1.params=
+comment1.target=java.util.ArrayList\ doLoad()
+comment1.text=\n\ Load\ up\ to\ 30\ seconds\ of\ a\ WAV\ file\ into\ an\ arraylist\n\ Scales\ all\ the\ values\ so\ that\ the\ maximum\ (+\ or\ -)\ is\ 300,\ and\ puts\ the\ scale\ factor\n\ into\ the\ scalingForSavingFile\ field,\ which\ can\ be\ used\ when\ saving\ to\ reverse\ the\ scaling.\n\ Only\ loads\ 1\ channel,\ and\ only\ uses\ the\ first\ two\ bytes\ in\ a\ frame.\ Assumes\ littleEndian\n\n
+comment2.params=waveform\ scale
+comment2.target=void\ doSave(java.util.ArrayList,\ double)
+comment2.text=\n\ Save\ the\ waveform\ to\ a\ WAV\ file,\ 1\ channel,\ 16\ bits\ per\ frame\n\ scales\ the\ values\ by\ dividing\ each\ value\ by\ scale.\n
+numComments=3

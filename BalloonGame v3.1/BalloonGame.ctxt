@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=BalloonGame
+comment0.text=\ Program\ for\ a\ simple\ game\ in\ which\ the\ player\ has\ to\ blow\ up\ balloons\n\ \ \ on\ the\ screen.\n\ \ The\ game\ starts\ with\ a\ collection\ of\ randomly\ placed\ small\ balloons\n\ \ \ \ (coloured\ circles)\ on\ the\ graphics\ pane.\n\ \ The\ player\ then\ clicks\ on\ balloons\ to\ blow\ them\ up\ by\ a\ small\ amount\n\ \ \ (randomly\ increases\ the\ radius\ between\ 4\ and\ 10\ pixels).\n\ \ If\ an\ expanded\ balloon\ touches\ another\ balloon,\ then\ they\ both\ "burst"\ and\ go\ grey.\n\ \ The\ goal\ is\ to\ get\ the\ largest\ score.\ The\ score\ is\ the\ total\ of\ the\n\ \ \ sizes\ (areas)\ of\ all\ the\ active\ balloons,\ minus\ the\ total\ size\ of\ all\n\ \ \ the\ burst\ balloons.\n\ \ At\ each\ step,\ the\ current\ score\ is\ recalculated\ and\ displayed,\n\ \ \ along\ with\ the\ highest\ score\ that\ the\ player\ has\ achieved\ so\ far.\n\ \ At\ any\ time,\ the\ player\ may\ choose\ to\ stop\ and\ "lock\ in"\ their\ score.\n\n\ \ The\ BalloonGame\ class\ has\ a\ field\ containing\ an\ Arraylist\ of\ Balloon\ objects\n\ \ \ to\ represent\ the\ current\ set\ of\ Balloons\ on\ the\ screen.\n\ \ It\ has\ a\ field\ to\ hold\ the\ highest\ score.\n\n\ \ The\ New\ Game\ button\ should\ start\ a\ new\ game.\n\ \ The\ Lock\ Score\ button\ should\ finish\ the\ current\ game,\ updating\ the\ highest\ score\n\n\ \ Clicking\ (ie,\ releasing)\ the\ mouse\ on\ the\ graphics\ pane\ is\ the\ main\ "action"\n\ \ of\ the\ game.\ The\ action\ should\ do\ the\ following\n\ \ \ \ Find\ out\ if\ the\ mouse\ was\ clicked\ on\ top\ of\ any\ balloon.\n\ \ \ \ If\ so,\n\ \ \ \ \ \ Make\ the\ balloon\ a\ bit\ larger\ and\ redraw\ it.\n\ \ \ \ \ \ Check\ whether\ the\ balloon\ is\ touching\ any\ other\ balloon.\n\ \ \ \ \ \ If\ so\n\ \ \ \ \ \ \ \ \ burst\ the\ two\ balloons\ (which\ will\ make\ them\ go\ grey)\n\ \ \ \ \ \ \ \ \ redraw\ the\ burst\ Balloons\n\ \ \ \ \ \ Recalculate\ and\ redisplay\ the\ score\n\ \ \ If\ all\ the\ balloons\ are\ gone,\ the\ game\ is\ over.\n\ \ \ \ \n\ \ \ To\ start\ a\ game,\ the\ program\ should\n\ \ \ \ \ \ \ Clear\ the\ graphics\ pane\n\ \ \ \ \ \ \ Initialise\ the\ score\ information\n\ \ \ \ \ \ \ Make\ a\ new\ list\ of\ Balloons\ at\ random\ positions\n\ \ \ \ \ \ \ Print\ a\ message\ \n\n\ \ \ If\ the\ game\ is\ over,\ the\ program\ should\n\ \ \ \ \ \ Update\ the\ highest\ score\ if\ the\ current\ score\ is\ better,\n\ \ \ \ \ \ Print\ a\ message\ reporting\ the\ scores,\n\ \ \ \ \ \n\ \ \ There\ are\ lots\ of\ ways\ of\ designing\ the\ program.\ It\ is\ not\ a\ good\ idea\n\ \ \ to\ try\ to\ put\ everything\ into\ one\ big\ method.\n\ \ \ \ \ \ \ \ \n\ \ Note\ that\ the\ Balloon\ class\ is\ written\ for\ you.\ Make\ sure\ that\ you\ know\n\ \ \ all\ its\ methods\ -\ no\ marks\ for\ redoing\ code\ that\ is\ given\ to\ you.\n\ \ \ \ \n
+comment1.params=
+comment1.target=void\ setupGUI()
+comment2.params=
+comment2.target=void\ restartGame()
+comment2.text=\ Start\ the\ game\:\n\ \ Clear\ the\ graphics\ pane\n\ \ Initialise\ the\ score\ information\ \n\ \ Make\ a\ new\ set\ of\ Balloons\ at\ random\ positions\n
+comment3.params=
+comment3.target=void\ lockScore()
+comment4.params=n
+comment4.target=void\ setNumBalloons(double)
+comment5.params=action\ x\ y
+comment5.target=void\ doMouse(java.lang.String,\ double,\ double)
+comment5.text=\n\ Main\ game\ action\:\n\ \ \ \ Find\ the\ balloon\ at\ (x,y)\ if\ any,\n\ \ Expand\ it\ \n\ \ Check\ whether\ it\ is\ touching\ another\ balloon,\n\ \ If\ so,\ burst\ both\ balloons.\n\ \ Redraw\ the\ balloon\ (and\ the\ other\ balloon\ if\ it\ was\ touching)\n\ \ Calculate\ and\ Report\ the\ score.\ (Hint\:\ use\ UI.printMessage(...)\ to\ report)\n\ \ If\ there\ are\ no\ active\ balloons\ left,\ end\ the\ game.\n
+comment6.params=arguments
+comment6.target=void\ main(java.lang.String[])
+comment6.text=\#\ YOUR\ CODE\ HERE
+numComments=7
